@@ -6,6 +6,31 @@
     <title>Cadastro de Alunos</title>
 </head>
 <body>
-    <h1>Preecha o formulário abaixo</h1>
+    <h3>Preecha o formulário abaixo</h3>
+
+    <form>
+        <ul>
+            <li>Nome</li>
+                <input type="text" name="nome" id="nome"> <br><br>
+            <li>Sobrenome</li>
+                <input type="text" name="sobrenome" id="sobrenome"> <br><br>
+            <li>Ano de Nascimento</li>
+                <input type="number"> <br><br>
+            <li>Escolha sua Graduação</li>
+                <select name="graduacao" id="graduacao">
+                    <option value="sistemas">Sistemas</option>
+                    <option value="quimica">Quimica</option>
+                    <option value="biologia">Biologia</option>
+                    <option value="zootecnia">Zootecnia</option>
+                    <option value="agronomia">Agronomia</option>
+                </select><br><br>
+            <li>Turno</li>
+                <input type="radio" value="matutino" name="turno" id="turno">Matutino <br>
+                <input type="radio" value="vespertino" name="turno" id="turno">Vespertino <br>
+                <input type="radio" value="noturno" name="turno" id="turno">Noturno <br>
+            <input type="submit" value="Cadastrar">
+        </ul>
+    </form>
+    <div nome="valores" id="valores"></div>
 </body>
 </html>
