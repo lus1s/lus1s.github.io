@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/scrip.js"></script>
     <title>Cadastro de Alunos</title>
 </head>
 <body>
     <h3>Preecha o formulário abaixo</h3>
 
-    <form>
+    <form onsubmit="return validacao()">
         <ul>
             <li>Nome</li>
                 <input type="text" name="nome" id="nome"> <br><br>
             <li>Sobrenome</li>
                 <input type="text" name="sobrenome" id="sobrenome"> <br><br>
             <li>Ano de Nascimento</li>
-                <input type="number"> <br><br>
+                <input type="text" name="nascimento" id="nascimento"> <br><br>
             <li>Escolha sua Graduação</li>
                 <select name="graduacao" id="graduacao">
                     <option value="sistemas">Sistemas</option>
@@ -25,9 +26,9 @@
                     <option value="agronomia">Agronomia</option>
                 </select><br><br>
             <li>Turno</li>
-                <input type="radio" value="matutino" name="turno" id="turno">Matutino <br>
-                <input type="radio" value="vespertino" name="turno" id="turno">Vespertino <br>
-                <input type="radio" value="noturno" name="turno" id="turno">Noturno <br>
+                <input type="checkbox" value="matutino" name="turno" id="turno">Matutino <br>
+                <input type="checkbox" value="vespertino" name="turno" id="turno">Vespertino <br>
+                <input type="checkbox" value="noturno" name="turno" id="turno">Noturno <br> <br>
             <input type="submit" value="Cadastrar">
         </ul>
     </form>
