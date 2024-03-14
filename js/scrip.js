@@ -29,17 +29,17 @@ function validacao() {
             return false;
         }
     }
-    if (graduacao.value == "") {
+    if (graduacao.value== "") {
         alert("Preencha o campo nome!!");
         document.getElementById("graduacao").focus();
         return false;
     }
-    if (turno.value == "") {
+    if (turno.checked == "") {
         alert("Preencha o campo nome!!");
         document.getElementById("turno").focus();
         return false;
     }
 
-    document.getElementById("valores").innerHTML= "Valores inseridos: Nome: " + nome;
+    document.getElementById("valores").innerHTML= "Valores inseridos: Nome: " + nome + "Sobrenome: " + sobrenome + "Ano de Nascimento: " + nascimento + "Graduação: " + graduaçao +     "Turno: " + turno;
 
 }
